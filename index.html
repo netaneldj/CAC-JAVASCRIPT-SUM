@@ -1,62 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<title>Suma de dos variables</title>
-	<style>
-		div #resultado{
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			margin: auto;
-			font-weight: 700;
-		}
-	</style>
-</head>
-<body class="bg-info">
-	<h1 class="display-1 text-center">Suma de dos variables</h1>
-	
-	<!--Comienzo del contenedor-->
-	<div class="container">
-		
-		<!--Comienzo de la fila-->
-		<div class="row text-center">
-			<!--Comienzo de la Columna-->
-			<div class="col-12 display-4">
-				<p>El resultado de la suma de las dos variables es:</p>
-			</div>
-			<!--Final de la Columna-->
-
-			<!--Comienzo de la columna-->
-			<div class="col-12">
-				<div class="text-center display-1  p-3 mb-2 bg-warning text-danger align-middle" id="resultado">
-				</div>
-			</div>
-			<!--Final  de la columna-->
-		</div>
-		<!--Final de la fila-->
-	
-	</div>
-	<!--Final del contenedor-->
-
-
-
-
-	<!--Comienzo de la etiqueta Script-->
 <script>
-	
-	//Declaracion de variables y asignacion
 	var primera = 40;
 	var segunda = 16;
-	var sumaTotal = primera + segunda;
-	
-	//Declaracion de variable y asigancion  de posicion div con id resultado
-	var documento = document.getElementById('resultado');
-	//Introducimo en el contenedor el dato contenido en la variable sumaTotal
-	documento.innerHTML = sumaTotal;
+	var suma = primera + segunda;
+
+	mensaje = "El resultado de la suma de las dos variables es";
+
+	document.write("<h1>" + mensaje + "</h1>");
+	document.write("<h2>" + Number(suma) + "</h2>");
+
 </script>
-	<!--Final de la etiqueta Script-->
 </body>
 </html>
